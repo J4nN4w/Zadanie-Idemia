@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
                 echo "krok przed"
                 sh '''#!/usr/bin/env bash
