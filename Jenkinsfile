@@ -6,6 +6,7 @@ pipeline {
                 echo "krok przed"
                 sh '''#!/usr/bin/env bash
                     echo "pierwsza linia"
+                    apt update
                     apt install -y docker.io
                     docker ps -a
                     echo $?
