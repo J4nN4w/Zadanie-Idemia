@@ -1,18 +1,7 @@
-pipeline {
-  
-  agent {
-    docker { image 'ubuntu'}
-      
-  
-  stages {
-    
-    stage("test") {
-      
-      steps {
-        bash '''
-          #!/bin/bash
-          sudo docker ps -a
-          '''
-      }
-    }
+stage('Stage1') {
+  steps {
+    sh '''#/bin/bash
+            echo "hello world"  
+       '''
   }
+}
