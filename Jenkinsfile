@@ -6,11 +6,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo "krok przed"
-                sh '''echo "pierwsza linia"
-                    docker ps -a
-                    echo $?
-                    echo "druga linia"'''
+                sh '''
+                    docker ps -a'''
             }
         }
     }
