@@ -3,10 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '''
-                    #!/bin/bash
-                    echo "hello world"
-                '''
+                sh '''#!/usr/bin/env bash
+                    echo "pierwsza linia"
+                    sudo docker ps -a
+                    echo $?
+                    echo "druga linia"'''
             }
         }
     }
