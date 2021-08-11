@@ -7,8 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "krok przed"
-                sh '''#!/bin/bash
-                    echo "pierwsza linia"
+                sh '''echo "pierwsza linia"
                     docker ps -a
                     echo $?
                     echo "druga linia"'''
