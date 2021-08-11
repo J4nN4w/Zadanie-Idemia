@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 bash '#!/bin/bash
-                      sudo docker ps -a'
+                      sudo echo docker ps -a echo'
             }
         }
     }
