@@ -1,10 +1,12 @@
 pipeline {
   
-  agent any
+  agent {
+    docker { image 'ubuntu'}
+      
   
   stages {
     
-    stage("build") {
+    stage("test") {
       
       steps {
         sh 'sudo docker ps -a'
