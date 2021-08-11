@@ -9,7 +9,10 @@ pipeline {
     stage("test") {
       
       steps {
-        sh 'sudo docker ps -a'
+        bash '''
+          #!/bin/bash
+          sudo docker ps -a
+          '''
       }
     }
   }
